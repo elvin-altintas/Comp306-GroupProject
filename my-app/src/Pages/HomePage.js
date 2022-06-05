@@ -3,6 +3,7 @@ import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import { getGenreOptionsAction } from "../Tools/actions";
 import AsyncSelect from 'react-select/async';
+import "../Styles/Home.css";
 
 const HomePage = () => {
   const [keyword, setKeyword] = useState(0);
@@ -130,7 +131,14 @@ const HomePage = () => {
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="loginButton" style={{ "font-size": 20, "margin-top": "20px" }}
         >Search
         </button>
+    {/* <div className="homePageWrapper">
+      <div className="homePageHeader">MOVINGOO</div>
+      <div className='moviesWrapper'>
+        <div className="homePageFilter">1</div>
+        <div className="homePageListing">2</div>
       </div>
+    </div> */}
+    </div>
     </div>
 
   );
